@@ -1,0 +1,19 @@
+* CHARMM parameter file for protonated SAR (N-methylglycine) residue
+* For N-terminal use at pH 7 (NH3+ protonated nitrogen)
+* Uses CHARMM36 methylammonium parameters
+*
+
+BONDS
+! Actual CHARMM36 methylammonium parameters
+NH3  CT3     200.00     1.4800   ! NH3+-methyl bond (methylammonium, CHARMM36)
+
+ANGLES  
+! Actual CHARMM36 methylammonium parameters
+CT3  NH3  CT2    67.70    110.00   ! methyl-NH3+-CA (methylammonium, CHARMM36)
+
+DIHEDRALS
+! Standard dihedrals for NH3+ N-methyl group
+CT2  NH3  CT3  HA3     0.2000  3     0.00
+CT3  NH3  CT2  C       1.8000  1     0.00
+
+END

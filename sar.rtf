@@ -1,0 +1,36 @@
+* Topology for protonated SAR residue (N-terminal, pH 7)
+* Net charge: +1.000 (NH3+ nitrogen)
+*
+36 1
+
+RESI SAR         1.000
+GROUP   
+ATOM N    NH3    -0.020
+ATOM HN1  HC      0.330
+ATOM HN2  HC      0.330
+ATOM CN   CT3    -0.070
+ATOM HN31 HA3     0.090
+ATOM HN32 HA3     0.090
+ATOM HN33 HA3     0.090
+GROUP   
+ATOM CA   CT2    -0.020
+ATOM HA1  HB2     0.090
+ATOM HA2  HB2     0.090
+GROUP   
+ATOM C    C       0.510
+ATOM O    O      -0.510
+
+BOND N HN1  N HN2  N CN  N CA
+BOND CN HN31  CN HN32  CN HN33
+BOND CA HA1  CA HA2  CA C  C O
+
+DONOR HN1 N
+DONOR HN2 N
+ACCEPTOR O C
+
+IC HN1  N    CA   C      1.010  109.50   60.00  109.50   1.520
+IC HN2  N    CA   C      1.010  109.50  -60.00  109.50   1.520
+IC CN   N    CA   C      1.448  109.50  180.00  109.50   1.520
+IC N    CA   C    O      1.450  109.50  120.00  120.00   1.220
+
+END
